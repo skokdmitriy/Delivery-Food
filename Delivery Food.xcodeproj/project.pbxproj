@@ -8,18 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		1B3469462A4459980062FC53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3469452A4459980062FC53 /* AppDelegate.swift */; };
-		1B34694A2A4459980062FC53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3469492A4459980062FC53 /* ViewController.swift */; };
+		1B34694A2A4459980062FC53 /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3469492A4459980062FC53 /* EmptyViewController.swift */; };
 		1B34694F2A44599A0062FC53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B34694E2A44599A0062FC53 /* Assets.xcassets */; };
 		1B3469522A44599A0062FC53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B3469502A44599A0062FC53 /* LaunchScreen.storyboard */; };
+		1B34695D2A445EA40062FC53 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B34695C2A445EA40062FC53 /* MainTabBarController.swift */; };
+		1B34695F2A4462090062FC53 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B34695E2A4462090062FC53 /* MenuViewController.swift */; };
+		1B3469652A4471D30062FC53 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3469642A4471D30062FC53 /* MenuTableViewCell.swift */; };
+		1B3469682A44743C0062FC53 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1B3469672A44743C0062FC53 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B3469422A4459980062FC53 /* Delivery Food.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Delivery Food.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B3469452A4459980062FC53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1B3469492A4459980062FC53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1B3469492A4459980062FC53 /* EmptyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
 		1B34694E2A44599A0062FC53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B3469512A44599A0062FC53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B3469532A44599A0062FC53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B34695C2A445EA40062FC53 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		1B34695E2A4462090062FC53 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		1B3469642A4471D30062FC53 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B3469682A44743C0062FC53 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,9 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				1B34695B2A445B000062FC53 /* Application */,
-				1B3469492A4459980062FC53 /* ViewController.swift */,
 				1B34695A2A445AEE0062FC53 /* Resources */,
 				1B3469592A445AD00062FC53 /* SupportingFiles */,
+				1B3469602A4465A30062FC53 /* TabBar */,
+				1B3469612A4465DA0062FC53 /* MenuModule */,
 			);
 			path = "Delivery Food";
 			sourceTree = "<group>";
@@ -85,6 +94,64 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		1B3469602A4465A30062FC53 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				1B34695C2A445EA40062FC53 /* MainTabBarController.swift */,
+				1B3469492A4459980062FC53 /* EmptyViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		1B3469612A4465DA0062FC53 /* MenuModule */ = {
+			isa = PBXGroup;
+			children = (
+				1B3469622A4465EF0062FC53 /* View */,
+				1B3469632A4471A10062FC53 /* Cell */,
+				1B3469692A44AC1E0062FC53 /* Header */,
+			);
+			path = MenuModule;
+			sourceTree = "<group>";
+		};
+		1B3469622A4465EF0062FC53 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1B34695E2A4462090062FC53 /* MenuViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1B3469632A4471A10062FC53 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1B3469642A4471D30062FC53 /* MenuTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1B3469692A44AC1E0062FC53 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				1B34696A2A44AC8D0062FC53 /* Baner */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		1B34696A2A44AC8D0062FC53 /* Baner */ = {
+			isa = PBXGroup;
+			children = (
+				1B34696B2A44AD720062FC53 /* View */,
+			);
+			path = Baner;
+			sourceTree = "<group>";
+		};
+		1B34696B2A44AD720062FC53 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -101,6 +168,9 @@
 			dependencies = (
 			);
 			name = "Delivery Food";
+			packageProductDependencies = (
+				1B3469672A44743C0062FC53 /* SnapKit */,
+			);
 			productName = "Delivery Food";
 			productReference = 1B3469422A4459980062FC53 /* Delivery Food.app */;
 			productType = "com.apple.product-type.application";
@@ -129,6 +199,9 @@
 				Base,
 			);
 			mainGroup = 1B3469392A4459980062FC53;
+			packageReferences = (
+				1B3469662A44743B0062FC53 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 1B3469432A4459980062FC53 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -155,8 +228,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B34694A2A4459980062FC53 /* ViewController.swift in Sources */,
+				1B34694A2A4459980062FC53 /* EmptyViewController.swift in Sources */,
 				1B3469462A4459980062FC53 /* AppDelegate.swift in Sources */,
+				1B34695D2A445EA40062FC53 /* MainTabBarController.swift in Sources */,
+				1B34695F2A4462090062FC53 /* MenuViewController.swift in Sources */,
+				1B3469652A4471D30062FC53 /* MenuTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +446,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1B3469662A44743B0062FC53 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1B3469672A44743C0062FC53 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B3469662A44743B0062FC53 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1B34693A2A4459980062FC53 /* Project object */;
 }
